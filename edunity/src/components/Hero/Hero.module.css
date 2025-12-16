@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+  height: 85vh;
+  background-image: url("/src/assets/hero.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  width:100vw;
+
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(11, 11, 44, 0.9),
+    rgba(11, 11, 44, 0.5)
+  );
+}
+
+.content {
+  position: relative;
+  max-width: 100%;
+  padding-left: 80px;
+  color: #fff;
+}
+.content h4{
+  color:#49CDAB;
+  padding-bottom:0px;
+  font-weight:10;
+  
+}
+
+.content h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.content h1 span {
+  color :#49CDAB;
+  
+}
+
+.content p {
+  font-size: 18px;
+  color: #d1d3ff;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}

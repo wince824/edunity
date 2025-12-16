@@ -1,0 +1,21 @@
+.upper{
+    display:flex;
+    padding-top:80px;
+    padding-left:200px;
+    gap:500px;
+}
+.left{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+}
+.main{
+    height:400px;
+    background-color:#F7F7F7;
+}
+.left p {
+    color:#a18ff8;
+}
+.left h2 {
+    color: #0E2A46;
+}

@@ -3,16 +3,18 @@
     font-size: 16px; 
     font-weight: 600;
      border: none;
-      border-radius: 8px; 
       cursor: pointer; 
       transition: all 0.3s ease; 
       font-family: inherit; 
     } 
     .btn-primary {
-         background-color: #007bff; 
+         background-color: #49CDAB; 
          color: white;
          } 
          .btn-secondary { 
-            background-color: #6c757d;
+            background-color: #674DF0;
              color: white; 
             }
+            .btn, .btn-primary, .btn-secondary {
+    border-radius: 0 !important;
+}

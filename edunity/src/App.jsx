@@ -1,18 +1,7 @@
-import './App.css'
-import Button from './components/Button/Button'
+import Home from "./components/Home/Home";
 
-function Home() {
- 
-
-  return (
-    <>
-      <div>
-<Button variant = "primary">Primary</Button>
-<Button variant = "secondary">sec</Button>
-      </div>
-        
-    </>
-  )
+function App() {
+  return <Home />;
 }
 
-export default Home
+export default App;
