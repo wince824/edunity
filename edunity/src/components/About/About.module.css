@@ -1,0 +1,19 @@
+.main{
+    display:flex;
+    background-color: #F2F2F2;
+    height: 600px;
+
+}
+.left {
+    width:50%;
+}
+.right h2  {
+color: #0E2A46;
+}
+.about {
+    color: #A18FF8;
+}
+.paragraph{
+    color:gray;
+    font-size:small;
+}
