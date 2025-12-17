@@ -1,34 +1,29 @@
-/* ProcessCard.module.css */
+
 
 .card {
   padding: 50px 30px;
   border-radius: 12px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  min-height: 350px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-}
 
-/* Outline Card Style */
+
+
 .cardOutline {
   background-color: white;
-  border: 3px dashed #1a2b4a;
+  border: 2px dashed #1a2b4a;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.cardOutline:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
 
 .cardOutline .iconContainer {
-  background-color: #1a2b4a;
+  background-color: white;
 }
 
 .cardOutline .title {
@@ -39,7 +34,7 @@
   color: #666;
 }
 
-/* Filled Card Style */
+
 .cardFilled {
   background-color: #7B68EE;
   box-shadow: 0 8px 24px rgba(123, 104, 238, 0.3);
@@ -61,10 +56,10 @@
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Icon Container */
+
 .iconContainer {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -73,9 +68,7 @@
   transition: transform 0.3s;
 }
 
-.card:hover .iconContainer {
-  transform: scale(1.1);
-}
+
 
 .icon {
   width: 40px;
@@ -83,16 +76,14 @@
   object-fit: contain;
 }
 
-/* For filled card, invert icon color */
+
 .cardFilled .icon {
   filter: invert(0);
 }
 
-.cardOutline .icon {
-  filter: invert(1);
-}
 
-/* Title */
+
+
 .title {
   font-size: 18px;
   font-weight: 700;
@@ -101,7 +92,7 @@
   text-transform: uppercase;
 }
 
-/* Description */
+
 .description {
   font-size: 14px;
   line-height: 1.7;

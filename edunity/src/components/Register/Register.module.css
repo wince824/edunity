@@ -1,0 +1,105 @@
+
+
+.container {
+  display: flex;
+  background-color: #F5F5F5;
+  padding: 80px 80px;
+  gap: 60px;
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+}
+
+
+
+.leftSection {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.topLabel {
+  color: #7B68EE;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #0E2A46;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: #666;
+  font-size: 10px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+
+.rightSection {
+  flex-shrink: 0;
+  width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 60px 40px;
+  }
+
+  .rightSection {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .decorRight {
+    right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .decorLeft {
+    width: 40px;
+    height: 40px;
+    left: 20px;
+  }
+
+  .decorLeft::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .decorRight {
+    width: 50px;
+    height: 50px;
+    right: 20px;
+  }
+
+  .decorRight::before {
+    width: 6px;
+    height: 50px;
+  }
+
+  .decorRight::after {
+    width: 50px;
+    height: 6px;
+  }
+}

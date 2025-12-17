@@ -1,11 +1,13 @@
-// CTACards.jsx
-import React from 'react';
+
+import Button from "../../components/ui/Button/Button"
 import styles from './CtaCards.module.css';
+import lady1 from "../../assets/lady1.svg"
+import lady2 from "../../assets/lady2.svg"
 
 const CTACards = () => {
   return (
     <div className={styles.container}>
-      {/* Purple Card */}
+      
       <div className={`${styles.card} ${styles.cardPurple}`}>
         <div className={styles.content}>
           <p className={styles.label}>≣ POPULAR COURSES</p>
@@ -13,14 +15,16 @@ const CTACards = () => {
             Get The Best Courses &<br />
             Upgrade Your Skills
           </h3>
-          <button className={styles.button}>JOIN WITH US</button>
+          <Button variant = "primary">JOIN WITH US</Button>
         </div>
-        <div className={styles.imagePlaceholder}>
-          Student Image
-        </div>
+            <img
+  src={lady1}
+  alt="Student"
+  className={styles.cardImage}
+/>
       </div>
 
-      {/* Dark Card */}
+     
       <div className={`${styles.card} ${styles.cardDark}`}>
         <div className={styles.content}>
           <p className={styles.label}>≣ POPULAR COURSES</p>
@@ -28,11 +32,13 @@ const CTACards = () => {
             Get The Best Courses &<br />
             Upgrade Your Skills
           </h3>
-          <button className={styles.button}>JOIN WITH US</button>
+          <Button variant = "secondary">JOIN WITH US</Button>
         </div>
-        <div className={styles.imagePlaceholder}>
-          Student Image
-        </div>
+        <img
+  src={lady2}
+  alt="Student"
+  className={styles.cardImage}
+/>
       </div>
     </div>
   );
