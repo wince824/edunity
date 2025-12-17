@@ -16,5 +16,5 @@
              color: white; 
             }
             .btn, .btn-primary, .btn-secondary {
-    border-radius: 0 !important;
+    border-radius: 0 ;
 }

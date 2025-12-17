@@ -1,11 +1,11 @@
 import Button from "../ui/Button/Button";
 import styles from "./Category.module.css";
 
- import webDesignIcon from "../../assets/web-design.png";
- import graphicsDesignIcon from "../../assets/graphics-design.png";
- import videoEditorIcon from "../../assets/video-editor.png";
- import contentWritingIcon from "../../assets/content-writing.png";
- import marketingIcon from "../../assets/marketing.png";
+ import webDesignIcon from "../../assets/web-design.svg";
+ import graphicsDesignIcon from "../../assets/graphics-design.svg";
+ import videoEditorIcon from "../../assets/video-editor.svg";
+ import contentWritingIcon from "../../assets/content-writing.svg";
+ import marketingIcon from "../../assets/marketing.svg";
 const CategoryItem = ({ icon, title, courseCount }) => {
   return (
     <div className={styles.categoryItem}>

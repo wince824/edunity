@@ -1,0 +1,130 @@
+/* CTACards.module.css */
+
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 80px 80px;
+  background-color: white;
+}
+
+.card {
+  flex: 1;
+  border-radius: 12px;
+  padding: 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+}
+
+/* Purple Card */
+.cardPurple {
+  background: linear-gradient(135deg, #7B68EE 0%, #9B84FF 100%);
+}
+
+/* Dark Card */
+.cardDark {
+  background: linear-gradient(135deg, #1a2b4a 0%, #2d4263 100%);
+}
+
+/* Content */
+.content {
+  flex: 1;
+  z-index: 2;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.button {
+  background-color: #00CBA9;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #00A88E;
+  transform: translateY(-2px);
+}
+
+.cardDark .button {
+  background-color: #7B68EE;
+}
+
+.cardDark .button:hover {
+  background-color: #6554D8;
+}
+
+/* Image Placeholder */
+.imagePlaceholder {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .container {
+    flex-direction: column;
+    padding: 60px 40px;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .content {
+    margin-bottom: 20px;
+  }
+
+  .imagePlaceholder {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .imagePlaceholder {
+    width: 150px;
+    height: 150px;
+  }
+}

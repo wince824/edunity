@@ -1,0 +1,122 @@
+
+.card {
+  background-color: #F3F5F5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+.courseImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+
+
+
+.content {
+  padding: 20px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ratingText {
+  color: #666;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currentPrice {
+  color: #1C3751;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.originalPrice {
+  color: #4D5756;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+
+.courseTitle {
+  color: #0E2A46;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  min-height: 50px;
+}
+
+
+.instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.instructorText {
+  color: #666;
+  font-size: 13px;
+}
+
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7B68EE;
+  margin: -20px;
+  margin-top: 15px;
+  padding: 12px 20px;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.metaItem svg {
+  margin-bottom: 2px;
+}

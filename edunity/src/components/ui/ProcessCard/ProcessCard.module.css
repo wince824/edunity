@@ -1,0 +1,109 @@
+/* ProcessCard.module.css */
+
+.card {
+  padding: 50px 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Outline Card Style */
+.cardOutline {
+  background-color: white;
+  border: 3px dashed #1a2b4a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cardOutline:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cardOutline .iconContainer {
+  background-color: #1a2b4a;
+}
+
+.cardOutline .title {
+  color: #0E2A46;
+}
+
+.cardOutline .description {
+  color: #666;
+}
+
+/* Filled Card Style */
+.cardFilled {
+  background-color: #7B68EE;
+  box-shadow: 0 8px 24px rgba(123, 104, 238, 0.3);
+}
+
+.cardFilled:hover {
+  box-shadow: 0 12px 32px rgba(123, 104, 238, 0.4);
+}
+
+.cardFilled .iconContainer {
+  background-color: white;
+}
+
+.cardFilled .title {
+  color: white;
+}
+
+.cardFilled .description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Icon Container */
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: transform 0.3s;
+}
+
+.card:hover .iconContainer {
+  transform: scale(1.1);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* For filled card, invert icon color */
+.cardFilled .icon {
+  filter: invert(0);
+}
+
+.cardOutline .icon {
+  filter: invert(1);
+}
+
+/* Title */
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+/* Description */
+.description {
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 280px;
+}
