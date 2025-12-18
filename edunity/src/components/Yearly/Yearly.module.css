@@ -23,6 +23,9 @@
 
 .header {
   text-align: center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   margin-bottom: 60px;
 }
 
@@ -78,7 +81,11 @@
 .cardContent {
   padding: 24px;
 }
-
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 .eventTitle {
   font-size: 18px;
   font-weight: 600;
@@ -96,7 +103,7 @@
 
 .eventMeta {
   display: flex;
-  flex-direction: column;
+ 
   gap: 8px;
 }
 

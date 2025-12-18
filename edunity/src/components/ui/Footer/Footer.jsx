@@ -1,12 +1,19 @@
-// Footer.jsx
+
 import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import styles from './Footer.module.css';
+import footer1 from "../../../assets/footer1.svg"
+import footer2 from '../../../assets/footer2.svg';
+import footer3 from '../../../assets/footer3.svg';
+import footer4 from '../../../assets/footer4.svg'
+import footer5 from '../../../assets/footer5.svg';
+import footer6 from '../../../assets/footer6.svg';
+
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      {/* Top Contact Bar */}
+     
       <div className={styles.topBar}>
         <div className={styles.contactItem}>
           <div className={styles.iconCircle}>
@@ -39,9 +46,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer Content */}
+      
       <div className={styles.mainContent}>
-        {/* About Section */}
+        
         <div className={styles.section}>
           <div className={styles.logo}>
             <svg className={styles.logoIcon} viewBox="0 0 40 40" fill="none">
@@ -76,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Services Section */}
+        
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Our Services:</h3>
           <ul className={styles.linkList}>
@@ -88,56 +95,35 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Gallery Section */}
+        
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Gallery</h3>
           <div className={styles.gallery}>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+               <img src={footer1} alt="Gallery 1" className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+              <img src={footer6} alt="Gallery 1" className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+              <img src={footer2} alt="Gallery 1" className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+              <img src={footer3} alt="Gallery 1" className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+              <img src={footer4} alt="Gallery 1" className={styles.galleryImage} />
             </div>
             <div className={styles.galleryItem}>
-              <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                <rect width="100" height="100" fill="#2a2a2a"/>
-                <circle cx="50" cy="40" r="15" fill="#3a3a3a"/>
-                <path d="M20 80 L40 60 L60 70 L80 50 L80 80 Z" fill="#3a3a3a"/>
-              </svg>
+              <img src={footer5} alt="Gallery 1" className={styles.galleryImage} />
+            </div>
+            <div className={styles.galleryItem}>
+             
             </div>
           </div>
         </div>
 
-        {/* Subscribe Section */}
+       
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Subscribe</h3>
           <form className={styles.subscribeForm}>
