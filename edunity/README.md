@@ -1,16 +1,28 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+summary
+ React is a JavaScript library, not a framework.
+It focuses on one job only: building user interfaces.
+React follows the Unix philosophy:
+o Do one thing, and do it well.
+React does not force structure or tools — it works alongside other libraries.
+Why React is different:
+• React is declarative
+• Developers describe what the UI should look like
+• React handles how the DOM updates happen
+The HTML DOM and the document Object
+• The HTML DOM (Document Object Model) is how the browser represents a web page.
+• The DOM turns an HTML page into a tree of objects that JavaScript can read and 
+manipulate.
+• At the top of this tree is the document object.
+• The document object is the owner of all elements on the page.
+• Every <div>, <p>, <input>, and <form> exists as an object in the DOM.
+• To interact with any HTML element, JavaScript must find it first using document.
+ 
+ Finding HTML Elements in the DOM
+JavaScript provides multiple ways to locate elements in an HTML page:
+Common DOM selection methods:
+• document.getElementById("id")
+o Finds one unique element
+o Returns the element or null
+• document.getElementsByTagName("tag")
+o Finds all elements with a given tag
+o Returns an HTMLCollection
